@@ -8,3 +8,6 @@ class Bebida(ItemCardapio):
     
     def __str__(self):
         return self._nome
+    
+    def aplic_descont(self):
+        self._preco -= (self._preco * 0.05)
